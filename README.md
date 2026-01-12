@@ -3,10 +3,8 @@
 A Python-based security testing tool designed to detect SQL Injection vulnerabilities and identify Web Application Firewall (WAF) behavior in web applications.
 The tool supports both single URL and bulk URL scanning, providing clear, color-coded terminal output for easy analysis.
 
-⚠️ Disclaimer: This tool is strictly for educational purposes and authorized security testing only. Do not scan any system without explicit permission.
-
-🚀 Features
-✅ SQL Injection Detection
+ Features
+ SQL Injection Detection
 
 Uses error-based, logical, and union-based SQL injection payloads
 
@@ -20,7 +18,7 @@ Oracle
 
 PostgreSQL
 
-🛡️ Web Application Firewall (WAF) Detection
+// Web Application Firewall (WAF) Detection
 
 Detects WAF behavior based on:
 
@@ -30,13 +28,13 @@ Significant response length variations
 
 Helps distinguish between true vulnerabilities and blocked payloads
 
-🔁 Flexible Scanning Modes
+// Flexible Scanning Modes
 
 Single URL scan
 
 Bulk URL scanning using a urls.txt file
 
-🎨 User-Friendly Output
+// User-Friendly Output
 
 Color-coded terminal output using Colorama
 
@@ -44,7 +42,7 @@ Clear vulnerability and WAF alerts
 
 Scan summary for each target
 
-🧰 Tech Stack
+// Tech Stack
 
 Language: Python 3
 
@@ -56,15 +54,15 @@ colorama
 
 Platform: Cross-platform (Linux / Windows / macOS)
 
-📦 Installation
-1️⃣ Clone the Repository
+// Installation
+// Clone the Repository
 git clone https://github.com/your-username/sqli-detector.git
 cd sqli-detector
 
-2️⃣ Install Required Libraries
+// Install Required Libraries
 pip install requests colorama
 
-▶️ Usage
+// Usage
 
 Run the script:
 
@@ -76,14 +74,14 @@ Choose Scan Type
 
 2 → Scan multiple URLs from a file
 
-🌐 Input Format
-🔹 Single URL
+// Input Format
+// Single URL
 
 Enter a URL with a parameter:
 
 http://example.com/page.php?id=
 
-🔹 Bulk URLs
+// Bulk URLs
 
 Create a urls.txt file:
 
@@ -91,15 +89,15 @@ http://example.com/page.php?id=
 http://test.com/item.php?item_id=
 http://vulnerable-site.com/index.php?product_id=
 
-🧪 Example Output
-🔴 Vulnerable Target
+// Example Output
+// Vulnerable Target
 [*] Starting SQL Injection scan for: http://example.com/page.php?id=
 [+] SQL Injection Found with payload: ' OR 1=1--
 [!] WAF Detected → HTTP 403 (Payload: ')
 [!] Scan complete.
 [!!!] The target might be VULNERABLE to SQL Injection.
 
-🟢 Secure Target
+// Secure Target
 [*] Starting SQL Injection scan for: http://secure-site.com/item.php?id=
 [-] No vulnerability with payload: '
 [!] Scan complete.
@@ -133,7 +131,7 @@ Logical condition bypass
 
 Column enumeration
 
-🧠 How It Works
+// How It Works
 
 Fetches a baseline response
 
