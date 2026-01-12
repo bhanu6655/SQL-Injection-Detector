@@ -56,8 +56,8 @@ Platform: Cross-platform (Linux / Windows / macOS)
 
 // Installation
 // Clone the Repository
-git clone https://github.com/your-username/sqli-detector.git
-cd sqli-detector
+git clone https://github.com/your-username/SQL-Injection-Detector.git
+cd main.py
 
 // Install Required Libraries
 pip install requests colorama
